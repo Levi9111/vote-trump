@@ -36,6 +36,7 @@
 
   .container {
     position:  relative;
+    overflowY: hidden;
   }
 
   .base-btn{
@@ -274,7 +275,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    width: var(--nav-width);
+    max-width: var(--nav-width);
     margin: 0 auto;
     @media (min-width: 1400px){
       width: 100%;
@@ -467,9 +468,44 @@ text-transform: capitalize;
   position: absolute;
   bottom: -355px;
   z-index: 3;
+
 }
 .vote-trump-banner img{
   width: 100%;
+}
+
+.vote-trump-banner-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+}
+
+.vote-trump-banner-content img{
+  width: 120px;
+  height: 120px;
+
+}
+
+.vote-trump-banner-content  {
+  font-size: 48px;
+  line-height: 57.6px;
+  text-transform: uppercase;
+  position: absolute;
+  }
+
+.vote-trump-banner-content span{
+  display: block;
+  min-width: 480px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
 /* Tokenomics */
@@ -666,4 +702,9 @@ footer a{
   place-content: center;
   background-color: #D9D9D9;
   border-radius: 100%;
+}
+
+.footer-bg-img{
+  position: absolute;
+  bottom: -380px;
 }
