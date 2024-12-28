@@ -1,3 +1,4 @@
+console.log(window.innerWidth);
 
 // 1366 ---> 100%
 // 1517 ---> 90%
