@@ -72,7 +72,7 @@
 
   /* Navbar */
 
-  .resposnive-nav{
+  .responsive-nav{
     display: none;
   }
 
@@ -116,7 +116,7 @@
     z-index: 1;
     text-transform: uppercase;
     color: var(--black-blue);
-    font-size: 20.99px;
+    font-size: 18px;
     line-height: 25.19px;
   }
 
@@ -780,7 +780,7 @@ footer a{
     position: relative;
     width: 95%;
     height: 45px;
-    margin: 0 auto ;
+    margin: 24px auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -810,7 +810,7 @@ footer a{
     display: block;
     padding-bottom: 15px;
     color: var(--black-blue);
-    font-size: 20.99px;
+    font-size: 18px;
     line-height: 25.19px;
     text-transform: uppercase;
     border-bottom: 2px solid var(--grey-light);
@@ -1299,7 +1299,7 @@ footer a img{
 
   .vote-trump-description img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
   .vote-trump-description .description{
   }
