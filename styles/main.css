@@ -20,6 +20,7 @@
   
   body {
     font-family: "RocknRoll One", serif;
+    font-weight: 400;
     font-style: normal;
   }
   
@@ -32,11 +33,15 @@
     color: inherit;
   }
 
+  button {
+    border:0;
+    background-color: transparent;
+    cursor: pointer;
+  }
 /* Common styles */
 
   .container {
     position:  relative;
-    overflowY: hidden;
   }
 
   .base-btn{
@@ -276,15 +281,13 @@
     display: flex;
     align-items: center;
     max-width: var(--nav-width);
+    width: 98%;
     margin: 0 auto;
-    @media (min-width: 1400px){
-      width: 100%;
-    }
+    
   }
 
 
   .vote-trump-img{
-    /* position: absolute; */
     position: relative;
     z-index: 3;
     @media (min-width: 1200px){
@@ -383,11 +386,12 @@
   }
 
   .roadmap-img-card-container {
-    margin-top: 146px;
+    max-width: var(--nav-width);
+    width: 98%;
+    margin: 146px auto 0;
     display: flex;
     align-items: end;
     justify-content: center;
-
     }
 
   .roadmap-img-card{
@@ -442,7 +446,9 @@
 }
 
 .roadmap-phases{
- margin-top: 75px; 
+  max-width: var(--nav-width);
+  width: 98%;
+ margin: 75px auto 0;
  display: flex;
  align-items: start;
  justify-content: center;
@@ -466,13 +472,14 @@ text-transform: capitalize;
 
 .vote-trump-banner {
   position: absolute;
-  bottom: -355px;
+  /* bottom: -355px; */
   z-index: 3;
 
 }
 .vote-trump-banner img{
   width: 100%;
 }
+
 
 .vote-trump-banner-content {
   position: absolute;
@@ -537,6 +544,8 @@ text-shadow: var(--text-shadow);
 .chart-container img:first-child{
   position: absolute;
   border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .tokenomics-bg-img-1{
@@ -552,23 +561,45 @@ text-shadow: var(--text-shadow);
 .tokenomics-bg-img-2{
   position: absolute;
   top: 350px;
-  right: -290px;
+  right: -310px;
   opacity: .4;
   transform: rotate(-50deg);
   width: 900px;
-  /* height: 1000px; */
+  height: 1000px;
 }
 
 .video-container{
+  position: relative;
   margin: 93px auto 170px;
-  width: var(--nav-width);
+  max-width: var(--nav-width);
+  width: 98%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
   background-color: var(--base-yellow);
   height: 800px;
-  border-top: 20px solid #9D9400;
-  border-bottom: 20px solid #9D9400;
+  overflow: hidden;
+  
 }
+
+.shape {
+  position: absolute;
+  display: block;
+  left: 50%; 
+  transform: translateX(-50%);
+  height: 500px;
+  border-radius: 50%;
+  width: 2400px;
+  background-color: var(--base-green);
+  border: 20px solid #9D9400;
+  }
+
+.shape-1{
+  top: -400px;
+}
+.shape-2 {
+  top: 1050px
+}
+
 
 .video-container-details{
   padding: 94px 0 94px 110px;
@@ -578,8 +609,15 @@ text-shadow: var(--text-shadow);
   margin-bottom: 32px;
 }
 
+.video {
+  width: 100%;
+}
+
 .video img{
   height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 
@@ -617,6 +655,9 @@ text-shadow: var(--text-shadow);
 .partners-btn-container button:nth-child(3){
   background-color: #000000;
   border: 2px solid #383838;
+  padding: 0 38px;
+  overflow: hidden;
+
 }
 .partners-btn-container button:nth-child(4){
   background: linear-gradient(245.22deg, #C200FB 7.98%, #3772FF 49.18%, #3773FE 49.18%, #5AC4BE 92.11%);
@@ -648,6 +689,9 @@ footer {
   position: relative;
   background-color: #fafdf7;
   padding-bottom: 60px;
+  height: 420px;
+  padding-top: 80px;
+  overflow: hidden;
 
 }
 
@@ -671,13 +715,15 @@ footer {
 
 .footer-shape{
   position: absolute;
-  top: -240px;
+  bottom:-100px;
   width: 100%;
   transform: rotateX(180deg);
 
 }
 
 footer h3{
+  position: relative;
+  z-index: 3;
   font-size: 60px;
   line-height: 84px;
   text-align: left;
@@ -691,9 +737,6 @@ footer h3{
   margin-top: 42px;
 }
 
-footer button{
- 
-}
 footer a{
   width: 66px;
   height: 66px;
@@ -706,5 +749,77 @@ footer a{
 
 .footer-bg-img{
   position: absolute;
-  bottom: -380px;
+  bottom: -280px;
+  right: 200px;
+  opacity: .4;
+}
+
+
+@media (max-width: 2049px) {
+
+}
+
+@media (max-width: 1821px) {
+
+}
+
+@media (max-width: 1707px) {
+
+}
+
+@media (max-width: 1517px) {
+  .vote-trump-description {
+    right: 250px;
+  }
+}
+
+@media (max-width: 1366px) {  
+  
+  .vote-trump-description{
+    right: 130px;
+  }
+  .vote-trump-description img{
+      width: 800px;
+      height: 550px;
+  }
+
+  .vote-trump-description .description{    
+      width: 520px;
+  }
+
+  .vote-trump-description .description p{
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .vote-trump-description .description h3{
+    font-size: 38px;
+    line-height: 30px;
+    margin-bottom: 12px;
+  }
+
+  .vote-trump-description .description button{
+    margin-top: 20px;
+  }
+
+
+  .card-img{
+   display: none;
+  }
+
+  .roadmap-img-card-container {
+    justify-content: space-between;
+    }
+
+
+}
+
+
+
+@media (min-width: 1200px){
+.vote-trump-img{
+    width: 800px;
+    height: 700px;
+  }
+  
 }
