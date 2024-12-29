@@ -17,6 +17,10 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
   
   body {
     font-family: "RocknRoll One", serif;
@@ -335,6 +339,16 @@
     font-size: 48px;
     line-height: 60px;
   }
+  }
+
+  .vote-trump-shape{
+    position: absolute;
+    width: 100%;
+    /* left: 50%; */
+    bottom: -160px;
+    /* transform: translate(-50%, -50%); */
+    z-index: 6;
+    display: none;
   }
 
   .vote-trump-description .description button{
@@ -986,9 +1000,7 @@ margin-bottom: 12px;
   .vote-trump-description{
     right: 0;
     height: 600px;
-    position: relative;
-    
-    
+    position: relative;    
   }
 
   .vote-trump-description img{
