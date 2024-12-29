@@ -44,6 +44,10 @@
     position:  relative;
   }
 
+  .mobile-view{
+    display: none;
+  }
+
   .base-btn{
     font-family: "RocknRoll One", serif;
     position: relative;
@@ -975,7 +979,7 @@ static  .hero-main-content img{
   
 
   /* Roadmap */
-
+/*
   .roadmap {
     padding: 100px 0 80px;
   }
@@ -1047,7 +1051,7 @@ font-size: 14px;
 line-height: 24px;
 margin-bottom: 8px;
 }
-
+*/
 
 
 /* Vote Trump banner */
@@ -1240,6 +1244,11 @@ footer a img{
 
 @media (max-width: 786px){
 
+
+  .mobile-view{
+    display: block;
+  }
+
   .hero {
   }
 
@@ -1253,7 +1262,9 @@ footer a img{
     width: 280px;
     margin: auto;
     position: absolute ;
-    left: 0 ;
+    left: 0;
+    margin-bottom: 20px;
+
   }
 
   .hero-text-content{
@@ -1290,6 +1301,7 @@ footer a img{
   /* Vote trump section */
 
   .vote-trump{
+    width: 100%;
   }
 
 
@@ -1304,7 +1316,8 @@ footer a img{
     height: 100%;
     
 }
-  .vote-trump-description .description{
+  .vote-trump-description {
+    z-index: 4;
   }
 
   .vote-trump-description .description p{
@@ -1317,6 +1330,24 @@ footer a img{
   }
 
 
+  .vote-trump-shape-1, .vote-trump-shape-2{
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .vote-trump-shape-1{
+   top: -90px;
+  }
+
+  .vote-trump-shape-2{
+    bottom: -90px;
+  }
+
+
   /* Roadmap */
 
   .roadmap {
@@ -1326,56 +1357,73 @@ footer a img{
   .roadmap-title{
   }
 
-  .roadmap-phases {
+  .roadmap-container {
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    margin:40px 0 120px 40px;
+    gap: 32px;
+    padding-bottom: 120px;
+  }
+  .roadmap-phases ul {
+    width: 100%;
   }
 
+
   .roadmap-phases ul:nth-child(2) {
-    margin: 0;
+    margin: 76px 0 46px;
   }
 
   .roadmap-title img{
     display: none;
   }
 
-
-  .roadmap-icons:first-child{
-  }
-
   .roadmap h3{
+  font-size: 35.61px;
+  line-height: 42.73px;
+  text-align: center;
   }
 
   .roadmap-img-card-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0 0;
     }
 
-  .roadmap-img-card{
-  }
-
   .trump-img{
+    height: 126px;
+    width: 130px;
   }
-  .roadmap-img-card span img{
+  .roadmap-img-card span img:first-child{
+    width: 165px;
+    height: 70px;
  
   }
 
-
-  .roadmap-img-card span{
-  
+  .roadmap-img-card span img:nth-child(2){
+    width: 165px;
+    height: 65px;
   }
 
-
-  .roadmap-img-card span p{
-  }
+.roadmap-img-card span p{
+  font-size: 13.69px;
+  line-height: 16.42px;
+}
 
 .card-img{
+  display: flex;
+  flex-direction: column;
+  margin: 24px 0 14px;
 }
 
 .card-img img{
+  transform: rotate(180deg);
 }
 
+
+.card-img:last-child {
+  display: none;
+}
 .roadmap-phases{
+  flex-direction: column;
 }
 
 .roadmap-phases ul{
@@ -1383,7 +1431,11 @@ footer a img{
 .roadmap-phases ul:nth-child(2){
 }
 
-ul  li  {}
+.roadmap-phases ul li{
+font-size: 14.88px;
+line-height: 22.32px;
+text-align: left;
+}
 
 
 /* Vote Trump banner */
@@ -1473,7 +1525,8 @@ bottom: -55px;
 }
 
 .video-container-details li{
-  margin-bottom: 10px;
+  font-size: 16px;
+  margin-bottom: 6px;
 }
 
 .video {
@@ -1486,7 +1539,12 @@ bottom: -55px;
 }
 
 
-.partners {}
+.partners h3{
+font-size: 35.61px;
+line-height: 42.73px;
+text-align: center;
+
+}
 
 .partners-btn-container {
 }
@@ -1517,10 +1575,12 @@ footer {
 }
 
 .footer-shape{
-  bottom: -32px
+  bottom: 0;
 }
 
 footer h3{
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .footer-btn-container{
