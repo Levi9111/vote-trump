@@ -1451,7 +1451,7 @@ footer a img{
   }
 
   .vote-trump-shape-1{
-   top: -130px;
+   top: -120px;
   }
 
   .vote-trump-shape-2{
@@ -1462,7 +1462,7 @@ footer a img{
   /* Roadmap */
 
   .roadmap {
-    padding: 60px 0;
+    padding: 85px 0 60px;
   }
 
   .roadmap-title{
