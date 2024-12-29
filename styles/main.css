@@ -94,10 +94,9 @@
   #nav-logo{}
 
   .nav ul {
-    width: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
   }
 
   .nav ul li {}
@@ -182,7 +181,7 @@
   }
 
   .hero-text-content{
-    max-width: 1024px;
+    max-width: 924px;
     position: absolute;
     left: 0;
     top: 0;
@@ -210,7 +209,7 @@
 
   .hero-main-content img{
     position: absolute;
-    right: 0;
+    right: -100px;
     bottom: 0;
   }
 
@@ -297,6 +296,7 @@
   }
 
   .vote-trump-description{
+    text-transform: uppercase;
     position: absolute;
     right: 320px;
     display: flex;
@@ -308,21 +308,12 @@
 
   .vote-trump-description img{
     position: absolute;
-    @media (min-width: 1400px){
-      width: 900px;
-      height: 650px;
-    }
-
   }
 
   .vote-trump-description .description{
     width: 780px;
     position: relative;
     z-index: 3;
-    text-transform: uppercase;
-    @media (min-width: 1400px){
-      width: 600px;
-    }
   }
 
   .vote-trump-description .description p{
@@ -399,12 +390,6 @@
     flex-direction: column;
     justify-content: center;
   }
-
-  .trump-img{
-    /* width: 317px; */
-    /* height: 317px; */
-  }
-
   .roadmap-img-card span {
     transform: scale(.7);
   }
@@ -479,9 +464,7 @@ text-transform: capitalize;
 
 .vote-trump-banner {
   position: absolute;
-  /* bottom: -355px; */
   z-index: 3;
-
 }
 .vote-trump-banner img{
   width: 100%;
@@ -607,7 +590,10 @@ text-shadow: var(--text-shadow);
 
 
 .video-container-details{
-  padding: 94px 0 94px 110px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 110px;
 }
 
 .video-container-details li{
@@ -624,9 +610,6 @@ text-shadow: var(--text-shadow);
   object-fit: cover;
   object-position: center;
 }
-
-
-.partners {}
 
 .partners-btn-container {
   display: flex;
@@ -685,7 +668,6 @@ text-shadow: var(--text-shadow);
 .partners-btn-container button:nth-child(8){
   background-color: #0B262B;
   border: 2px solid #232323;
-
 }
 
 /*footer */
@@ -697,7 +679,6 @@ footer {
   height: 420px;
   padding-top: 80px;
   overflow: hidden;
-
 }
 
 .footer-contents{
@@ -723,7 +704,6 @@ footer {
   bottom:-100px;
   width: 100%;
   transform: rotateX(180deg);
-
 }
 
 footer h3{
@@ -772,9 +752,100 @@ footer a{
 
 }
 
+
+@media (max-width: 1550px) {
+  :root{
+    --text-shadow: 0px 8.07px 0px #000000;
+  }
+.base-btn {
+  width: 204px;
+  height: 76px;
+  font-size: 18.55px;
+  line-height: 22.26px;
+}
+
+h1 {
+  font-size: 75.82px;
+  line-height: 94.77px;  
+}
+
+.hero-text-content p{
+font-size: 20.97px;
+line-height: 35.65px;
+text-align: left;
+margin: 40px 0;
+}
+
+.hero-main-content img {
+  width: 755px;
+  height: 744px;
+}
+
+.vote-trump-img {
+  width: 914px;
+  height: 926px;
+}
+
+.vote-trump-description img {
+  width: 1040px;
+  height: 623px;
+}
+
+.vote-trump-description {
+  right: 280px;
+}
+
+.roadmap h3 ,
+.tokenomics h3,
+.partners h3 {
+font-size: 75.82px;
+line-height: 90.98px;
+}
+
+.roadmap-phases ul{
+  width: 277px;
+}
+
+.roadmap-phases ul li{
+font-size: 19.36px;
+line-height: 29.04px;
+margin-bottom: 12px;
+}
+
+.roadmap-img-card .trump-img{
+  transform: scale(.9);
+}
+
+.video-container-details{
+  padding-left: 90px;
+}
+
+}
+
 @media (max-width: 1517px) {
   .vote-trump-description {
-    right: 250px;
+    right: 195px;
+  }
+
+  .card-img:last-child {
+    display: none;
+  }
+}
+
+
+@media (min-width: 1400px){
+.vote-trump-description img{
+  position: absolute;
+    width: 900px;
+    height: 650px;
+}
+
+.vote-trump-description .description{
+  width: 780px;
+  position: relative;
+  z-index: 3;
+  text-transform: uppercase;
+    width: 600px;
   }
 }
 
@@ -904,7 +975,7 @@ footer a{
   line-height: 23.2px;
   margin: 20px 0 10px;
   }
-static  .hero-main-content img{
+  .hero-main-content img{
   height: 420px;
   width: 320px;
   }
@@ -1146,15 +1217,12 @@ display: none;
   top: 1050px
 }
 
-
+/* 
 .video-container-details{
-  padding: 94px 0 94px 110px;
-}
+  padding: 94px 0 94px 11-left0px
 
 .video-container-details li{
-  margin-bottom: 32px;
-}
-
+  margin-bottom: 3-left2px;
 .video {
   width: 100%;
 }
@@ -1240,6 +1308,51 @@ footer a img{
   opacity: .4;
 }
 }
+
+@media (max-width: 930px) {
+  /* Roadmap */
+
+  .roadmap {
+    padding: 80px 0;
+  }
+
+  .roadmap-container{
+    display: flex;
+  }
+
+  .roadmap-phases ul {
+    width: auto;
+  }
+  .roadmap-phases ul:nth-child(2) {
+    margin: 76px 0 46px;
+  }
+
+  .roadmap-title img{
+    display: none;
+  }
+
+  .roadmap-img-card-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0 0;
+    }
+
+.card-img{
+  display: flex;
+  flex-direction: column;
+  margin: 24px 0 14px;
+}
+
+.card-img img{
+  transform: rotate(180deg);
+}
+
+.roadmap-phases{
+  flex-direction: column;
+}
+}
+
 
 @media (max-width: 786px){
 
@@ -1338,11 +1451,11 @@ footer a img{
   }
 
   .vote-trump-shape-1{
-   top: -90px;
+   top: -130px;
   }
 
   .vote-trump-shape-2{
-    bottom: -90px;
+    bottom: -120px;
   }
 
 
@@ -1356,35 +1469,36 @@ footer a img{
   }
 
   .roadmap-container {
-    display: flex;
+    /* display: flex; */
     gap: 0;
     padding-bottom: 120px;
   }
+/*   
   .roadmap-phases ul {
     width: auto;
-  }
+  } */
 
-
+/* 
   .roadmap-phases ul:nth-child(2) {
     margin: 76px 0 46px;
-  }
+  } */
 
-  .roadmap-title img{
+  /* .roadmap-title img{
     display: none;
-  }
+  } */
 
   .roadmap h3{
   font-size: 35.61px;
   line-height: 42.73px;
   text-align: center;
   }
-
+/* 
   .roadmap-img-card-container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 40px 0 0;
-    }
+    } */
 
   .trump-img{
     height: 126px;
@@ -1405,24 +1519,24 @@ footer a img{
   font-size: 13.69px;
   line-height: 16.42px;
 }
-
+/* 
 .card-img{
   display: flex;
   flex-direction: column;
   margin: 24px 0 14px;
-}
-
+} */
+/* 
 .card-img img{
   transform: rotate(180deg);
-}
+} */
 
-
+/* 
 .card-img:last-child {
   display: none;
 }
 .roadmap-phases{
   flex-direction: column;
-}
+} */
 
 .roadmap-phases ul{
 }
@@ -1439,7 +1553,7 @@ text-align: left;
 /* Vote Trump banner */
 
 .vote-trump-banner {
-bottom: -55px;
+bottom: -100px;
 }
 .vote-trump-banner-content img{
    width: 30px; 
@@ -1475,8 +1589,8 @@ bottom: -55px;
 }
 
 .chart-container img:first-child{
-  width: 70px;
-  height: 70px;
+  width: 150px;
+  height: 150px;
 }
 
 .chart-container img:nth-child(2) {
@@ -1505,14 +1619,17 @@ bottom: -55px;
   }
 
   .shape-1{
-    top: -300px
+    top: -270px
+  }
+
+  .shape-2 {
+    top: 975px;
   }
 
 
 
 .video-container-details{
-  padding: 0;
-  display: flex;
+  padding-left: 0;
   align-items: end;
   justify-content: center;
 }
@@ -1545,12 +1662,13 @@ text-align: center;
 }
 
 .partners-btn-container {
+  padding-bottom: 120px;
 }
 
 .partners-btn-container button {
   width: 280px;
   height: 110px;
-  padding: 0px 10px;
+  padding: 15px 20px;
   border-radius: 60px;
   margin-bottom: 15px;
   margin-right: 8px;
@@ -1598,7 +1716,20 @@ footer a{
   margin-top: 16px;
 }
 
+}
 
+@media (max-width: 510px ){
+.chart-container img:first-child{
+  width: 70px;
+  height: 70px;
+ }
+}
+
+
+@media (max-width: 368px ){
+  .vote-trump-banner {
+    bottom: -75px;
+}
 }
 
 
