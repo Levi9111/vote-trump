@@ -794,7 +794,7 @@ footer a{
     position: absolute;
     left: 0;
     right: 0;
-    height: 200px;
+    height: 260px;
     z-index: 4;
     top: -600px;
     display: flex;
@@ -1249,21 +1249,20 @@ footer a img{
     display: block;
   }
 
-  .hero {
-  }
-
-
  .hero-main-content{
-    min-height: 700px;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 37px;
   }
 
   .hero-main-content img{
     height: 280px;
     width: 280px;
-    margin: auto;
-    position: absolute ;
-    left: 0;
-    margin-bottom: 20px;
+    position: static;
+    margin-bottom: 10px;
 
   }
 
@@ -1359,11 +1358,11 @@ footer a img{
 
   .roadmap-container {
     display: flex;
-    gap: 32px;
+    gap: 0;
     padding-bottom: 120px;
   }
   .roadmap-phases ul {
-    width: 100%;
+    width: auto;
   }
 
 
@@ -1575,7 +1574,7 @@ footer {
 }
 
 .footer-shape{
-  bottom: 0;
+  bottom: -3px;
 }
 
 footer h3{
