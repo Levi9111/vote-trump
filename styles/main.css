@@ -91,15 +91,11 @@
     justify-content: space-between;
   }
 
-  #nav-logo{}
-
   .nav ul {
     width: 65%;
     display: grid;
     grid-template-columns: repeat(4,1fr);
   }
-
-  .nav ul li {}
 
   .nav ul li a {
     position: relative;
@@ -344,7 +340,6 @@
   .vote-trump-description .description button{
     margin-top: 40px;
   }
-
 
   /* Roadmap */
 
@@ -740,19 +735,6 @@ footer a{
 }
 
 
-@media (max-width: 2049px) {
-
-}
-
-@media (max-width: 1821px) {
-
-}
-
-@media (max-width: 1707px) {
-
-}
-
-
 @media (max-width: 1550px) {
   :root{
     --text-shadow: 0px 8.07px 0px #000000;
@@ -997,13 +979,6 @@ margin-bottom: 12px;
 
   /* Vote trump section*/
 
-
-
-
-  .vote-trump{
-  }
-
-
   .vote-trump-img{
     display: none;
   }
@@ -1038,90 +1013,12 @@ margin-bottom: 12px;
   .vote-trump-description .description h3{
   font-size: 32px;
   line-height: 36px;
-
   margin-bottom: 14px;
   }
 
   .vote-trump-description .description button{
     margin-top: 10px;
   }
-   
-  
-
-  /* Roadmap */
-/*
-  .roadmap {
-    padding: 100px 0 80px;
-  }
-
-
-  .roadmap-icons:first-child{
-    display: none;
-  }
-
-  .roadmap h3{
-  text-align: center;
-  font-size: 42px;
-  line-height: 63.8px;
-  }
-
-  .roadmap-img-card-container {
-    width: 98%;
-    margin: 86px auto 0;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    
-    }
-
-  .roadmap-img-card{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .trump-img{
-    display: none;
-    
-  }
-  .roadmap-img-card span img{
-    width: 240px;
-  }
-
-
-  .roadmap-img-card span{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-
-  .roadmap-img-card span p{
-    font-size: 14.2px;
-    line-height: 24.04px;
-  }
-
-
-.roadmap-phases{
- margin: 55px auto 0;
- display: grid;
- grid-template-columns: repeat(3,33.9%);
-}
-
-.roadmap-phases ul{
-  width: max-content;
-  list-style: disc;
-}
-.roadmap-phases ul:nth-child(2){
-  margin: 0 20px;
-}
-
-ul  li  {
-font-size: 14px;
-line-height: 24px;
-margin-bottom: 8px;
-}
-*/
 
 
 /* Vote Trump banner */
@@ -1193,9 +1090,7 @@ display: none;
   margin: 33px auto 30px;
   grid-template-columns: 50% 50%;
   background-color: var(--base-yellow);
-  height: 800px;
-  /* overflow: hidden; */
-  
+  height: 800px;  
 }
 
 .shape {
@@ -1217,47 +1112,6 @@ display: none;
   top: 1050px
 }
 
-/* 
-.video-container-details{
-  padding: 94px 0 94px 11-left0px
-
-.video-container-details li{
-  margin-bottom: 3-left2px;
-.video {
-  width: 100%;
-}
-
-.video img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.partners-btn-container button{
-  width: 200px;
-  height: 86px;
-  padding: 0;
-  border-radius: 40px;
-  margin-bottom: 14px;
-  margin-right: 10px;
-  z-index: 3;
-}
-.partners-btn-container button img{
-  width: 50%;
-  height: 40%;
-}
-
-
-.partners-btn-container button:nth-child(3){
-  padding: 0;
-}
-
-.partners-btn-container button:nth-child(3) img{
-  height: 50%;
-}
-
-
 /*footer */
 
 footer {
@@ -1265,12 +1119,6 @@ footer {
   height: 300px;
   padding-top: 40px;
 
-}
-
-.footer-contents{
-}
-
-.footer-contents button{
 }
 
 .footer-shape{
@@ -1355,8 +1203,6 @@ footer a img{
 
 
 @media (max-width: 786px){
-
-
   .mobile-view{
     display: block;
   }
@@ -1400,26 +1246,9 @@ footer a img{
     margin: 18px 0 24px;
   }
 
-  .hero-main-content img{
-  }
-
-  .hero-shape-img{
-  }
-
-  .hero-shape-icon-container{
-  }
-
   /* Vote trump section */
-
   .vote-trump{
     width: 100%;
-  }
-
-
-  .vote-trump-img{
-  }
-
-  .vote-trump-description{
   }
 
   .vote-trump-description img {
@@ -1430,16 +1259,6 @@ footer a img{
   .vote-trump-description {
     z-index: 4;
   }
-
-  .vote-trump-description .description p{
-  }
-
-  .vote-trump-description .description h3{
-  }
-
-  .vote-trump-description .description button{
-  }
-
 
   .vote-trump-shape-1, .vote-trump-shape-2{
     position: absolute;
@@ -1458,7 +1277,6 @@ footer a img{
     bottom: -120px;
   }
 
-
   /* Roadmap */
 
   .roadmap {
@@ -1469,45 +1287,24 @@ footer a img{
   }
 
   .roadmap-container {
-    /* display: flex; */
     gap: 0;
     padding-bottom: 120px;
   }
-/*   
-  .roadmap-phases ul {
-    width: auto;
-  } */
-
-/* 
-  .roadmap-phases ul:nth-child(2) {
-    margin: 76px 0 46px;
-  } */
-
-  /* .roadmap-title img{
-    display: none;
-  } */
 
   .roadmap h3{
   font-size: 35.61px;
   line-height: 42.73px;
   text-align: center;
   }
-/* 
-  .roadmap-img-card-container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 40px 0 0;
-    } */
 
   .trump-img{
     height: 126px;
     width: 130px;
   }
+
   .roadmap-img-card span img:first-child{
     width: 165px;
     height: 70px;
- 
   }
 
   .roadmap-img-card span img:nth-child(2){
@@ -1518,29 +1315,6 @@ footer a img{
 .roadmap-img-card span p{
   font-size: 13.69px;
   line-height: 16.42px;
-}
-/* 
-.card-img{
-  display: flex;
-  flex-direction: column;
-  margin: 24px 0 14px;
-} */
-/* 
-.card-img img{
-  transform: rotate(180deg);
-} */
-
-/* 
-.card-img:last-child {
-  display: none;
-}
-.roadmap-phases{
-  flex-direction: column;
-} */
-
-.roadmap-phases ul{
-}
-.roadmap-phases ul:nth-child(2){
 }
 
 .roadmap-phases ul li{
@@ -1563,27 +1337,12 @@ bottom: -100px;
 .vote-trump-banner-content span {
   min-width: 200px;
 }
-.vote-trump-banner-content {
-}
-
-.vote-trump-banner-content img{
-}
-
-.vote-trump-banner-content  {
-  }
-
-.vote-trump-banner-content span{
-}
 
 /* Tokenomics */
 
 .tokenomics {
   padding: 130px 0 65px;
 }
-
-.tokenomics h3 {
-}
-
 .chart-container{
   width: 100%;
 }
@@ -1598,12 +1357,6 @@ bottom: -100px;
   height: auto;
 }
 
-.tokenomics-bg-img-1{
-}
-
-.tokenomics-bg-img-2{
-}
-
 .video-container{
   margin: 0 auto ;
   grid-template-columns: 1fr;
@@ -1614,7 +1367,6 @@ bottom: -100px;
 .shape {  
   width: 800px;
   height: 350px;
-  /* border-radius: 80%; */
   border: 10px solid #9D9400;
   }
 
@@ -1644,21 +1396,16 @@ bottom: -100px;
   margin-bottom: 6px;
 }
 
-.video {
-}
-
 .video img{
   width: 100%;
   height: 100%;
   background-position: center;
 }
 
-
 .partners h3{
 font-size: 35.61px;
 line-height: 42.73px;
 text-align: center;
-
 }
 
 .partners-btn-container {
@@ -1674,20 +1421,10 @@ text-align: center;
   margin-right: 8px;
 }
 
-
-.partners-btn-container button:nth-child(8){
-}
-
 /*footer */
 
 footer {
   height: auto;
-}
-
-.footer-contents{
-}
-
-.footer-contents button{
 }
 
 .footer-shape{
@@ -1697,12 +1434,6 @@ footer {
 footer h3{
   font-size: 24px;
   line-height: 32px;
-}
-
-.footer-btn-container{
-}
-
-footer a{
 }
 
 .footer-bg-img{
